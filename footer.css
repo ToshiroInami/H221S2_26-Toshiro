@@ -1,0 +1,126 @@
+/* formulario */
+
+.container_formulario{
+    display: flex;
+    justify-content: center;
+
+    
+    
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgb(46, 6, 139);
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    
+
+}
+  
+input[type=submit] {
+    background-color: rgb(46, 6, 139);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+label{
+    font-weight: bold;
+}
+  
+.container{
+    width: 40%;
+    border-radius: 20px;
+    background-color: #c7bbbb;
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.container_form-img{
+    width: 50%;
+    background-color: #45a049;
+    margin-right: 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.container_form-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    
+    
+    
+}
+.container_form-matriculate{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background:linear-gradient(#22c3bc,#452ab0);
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+    border-radius: 20px;
+}
+.container_form-matriculate p{
+    width: 60%;
+    position: relative;
+    color: aliceblue;
+    font-size: 26px;
+    display: inline-block;
+    left: 4%;
+    top:8%;
+    background:linear-gradient(#22c1c3,#31b02a);    
+    padding: 12px;
+    font-weight: bold;
+    border-radius: 20px;
+    
+}
+@media screen and (max-width:780px){
+    .container_formulario{
+        flex-wrap: wrap;
+   
+    }
+    .container_form-img{
+        margin-left: 35px;
+        width: 68%;    
+    }
+    .container_form-matriculate p{
+        width: 70%;
+    }
+    .container{
+        width: 66%;
+    }
+
+} 
+
+
+@media screen and (max-width:540px){
+    .container{
+        width: 100%;
+        margin-right: 20px;
+    }
+    .container_form-img{
+        width: 100%;
+        background-color: #22c3bc;
+        margin-left:4%
+    
+    }
+    .container_form-matriculate p{
+        width: 80%;
+    }
+
+} 

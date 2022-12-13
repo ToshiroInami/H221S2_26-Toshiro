@@ -1,0 +1,312 @@
+*{
+  margin: 0px;
+
+}
+.reseña-container{
+  display: flex;
+  background-color: #171A4A;
+  justify-content: center;
+  align-items:center;
+  height: 500px;
+  width: 100%; 
+  
+}
+.reseña-container .reseña{
+  /*background-color: #174a17; color de la reseña*/
+  font-family: Cambria;
+  margin: 70px;
+  color:rgb(255, 255, 255);
+  padding: 15px;
+  width: 450px;
+  height: 370px;
+  
+}
+.reseña-container .reseña_imagen{
+  margin: 80px;
+  
+}
+.reseña_titulo-parrafo{
+  padding-top: 27px;
+  
+}
+
+.reseña_titulo{
+  display: inline-block;
+  color: red;
+  font-size: 30px;
+  border-bottom: 3px solid yellow;
+  
+}
+
+.reseña_imagen img{
+  width: 480px;
+  height: 360px;
+  
+}
+/* mision y valores mejorar el quienes somos */
+.supercontainer{
+background-color:#e7e7e7;
+width: 100%;
+
+}
+.supercontainer{
+  
+  text-align: center;
+}
+
+.supercontainer-somos h2{
+  display: inline-block;
+  font-family: Cambria;
+  color: red ;
+  font-size: 30px;
+  margin-top: 34px;
+  border-bottom: 3px solid yellow;
+
+}
+
+.container_mision{
+  display: flex;
+  color:#ffffff;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+.vision_titulo{
+  display: inline-block;
+  color: red;
+  border-bottom: 2px solid yellow;
+  
+}
+.mision_titulo{
+  display: inline-block;
+  color: red;
+  border-bottom: 2px solid yellow;
+  
+}
+.vision{
+  background-color: #171A4A;;
+  width: 330px;
+  height: 300px;
+  border-radius: 37px;
+  margin: 30px;
+  padding: 15px; 
+  font-family: cambria; 
+  font-size: 16px;
+}
+.vision_titulo-parrafo{
+  padding-top: 15px;
+  
+}
+.mision{
+  background-color: #171A4A;;
+  width: 330px;
+  height: 300px;
+  border-radius: 37px;
+  margin: 30px;
+  font-size: 16px;
+  font-family: cambria;
+  padding: 15px;
+  
+}
+.mision_titulo-parrafo{
+  padding-top: 15px;
+}
+/*mensajae del director*/
+
+.mensaje{
+  display: flex;
+  background-color: #171A4A;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+  width: 100%;
+
+}
+.mensaje_imagi img{
+  width: 370px;
+  height: 360px;
+
+}
+.mensaje_imagi{
+  margin: 90px;
+}
+.mensaje_director{
+  
+  height: 400px;
+  width: 420px;
+  padding: 15px;
+  margin: 90px;
+   /*background-color: #174a46; */
+  
+  
+
+}
+.mensaje_director .mensaje_titulo{
+  display: inline-block;
+  font-family: Cambria;
+  font-size: 28px;
+  color: red;
+  border-bottom: 3px solid yellow;
+
+}
+
+
+.mensaje_director .mensaje_titulo-parrafo{
+  
+  font-size: 16px;
+  font-family: cambria;
+  padding-top: 15px;
+  
+}
+
+/* documentos pi*/
+.container-documentacion{
+  display: flex;
+  width: 100%;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  /*background-color: aquamarine; */
+
+}
+.contenedor_conceptogestion{
+  /* background-color: #fd1d1d;*/
+  width: 500px;
+
+}
+.contenedor_conceptogestion-0{
+  background-color: #171A4A;
+  border-radius:13px;
+  width: 500px;
+  height: 165px;
+  margin-bottom: 20px;
+
+}
+.contenedor_concepto-titulo{
+  display: inline-block;
+  font-size: 29px;
+  color:#fd1d1d;
+  border-bottom: 2px solid yellow;
+  font-family: cambria;
+  font-weight: bold;
+  margin-left: 21px;
+  margin-top: 10px;
+
+
+}
+.contenedor_concepto-gestion{
+  font-family: Cambria;
+  color:#ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 14px;
+  margin-left: 20px;
+
+}
+
+.container-documentacion-1{
+
+  display: flex;
+  /* background-color: #fcb045; */
+  max-width: 500px;
+  justify-content: center;
+
+}
+
+
+.container-documentacion img{
+  width: 530px;
+  height: 430px;
+  margin-right: 56px;
+  border-radius: 30px;
+
+}
+.container-pi{       /*PI*/
+  display: flex;
+  background-image: linear-gradient(#549c45, #4982aa);
+  flex-direction: column;
+  color: aliceblue;
+  height: 130px;
+  width: 130px;
+  align-items: center;
+  border-radius: 37%;
+  margin-left: 14px;
+}
+.container-pi .contenedor-palabra{
+  font-size: 23px;
+  font-family: cambria;
+  width: 70px;
+  height: 40px;
+  margin-top: 25px;
+}
+.container-pi .contenedor-link{
+  display: inline-block;
+  font-size: 23px;
+  margin-top: 0px;
+}
+.contenedor-link a{
+  text-decoration: none;
+  font-family: cambria;
+  color:aliceblue;
+  font-weight: bold;
+
+}
+/*container pat*/
+.container-pat{
+  display: flex;
+  background-image: linear-gradient(#fdbb2d, #22c1c3);
+  flex-direction: column;
+  color: aliceblue;
+  height: 130px;
+  width: 130px;
+  align-items: center;
+  border-radius: 37%;
+  margin-left: 24px;
+}
+.container-pat .contenedor-palabra{
+  font-size: 23px;
+  font-family: cambria;
+  width: 70px;
+  height: 40px;
+  margin-top: 25px;
+
+}
+.container-pat .contenedor-link{
+  display: inline-block;
+  font-size: 23px;
+  margin-top: 0px;
+
+}
+/*container reglamento*/
+.container-reglamento{
+  display: flex;
+  background-image: linear-gradient(#4982aa, #459c92);
+  flex-direction: column;
+  color: aliceblue;
+  height: 130px;
+  width: 130px;
+  align-items: center;
+  border-radius: 37%;
+  margin-left: 24px;
+
+}
+.container-reglamento .contenedor-palabra{
+  font-size: 23px;
+  font-family: cambria;
+  width: 70px;
+  height: 40px;
+  margin-top: 25px;
+
+}
+.container-reglamento .contenedor-link{
+  display: inline-block;
+  font-size: 23px;
+  margin-top: 0px;
+
+}
+
+
+
