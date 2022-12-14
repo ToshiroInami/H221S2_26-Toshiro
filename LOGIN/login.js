@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(__dirname + '/'));
 
 var conexion = mysql.createConnection({
-	host: "localhost",
+	host: "DATABASE",
 	user: "root",
 	password: "",
 	database: "login_socket"
