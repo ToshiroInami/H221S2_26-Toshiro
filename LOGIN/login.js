@@ -9,8 +9,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(__dirname + '/'));
 
 var conexion = mysql.createConnection({
-	host: "DATABASE",
-	user: "root",
+	host: "334.230.250.81",
+	user: "H221S2_26",
 	password: "",
 	database: "login_socket"
 });
@@ -20,7 +20,7 @@ conexion.connect(function (error) {
 		console.log(error)
 		throw error;
 	} else {
-		console.log("Conexión exitosa");
+		console.log("ConexiÃ³n exitosa");
 	}
 });
 
@@ -69,14 +69,14 @@ app.post('/auth', function (request, response) {
 			if (error) throw error;
 
 			if (results.length > 0) {
-				response.redirect('/');
+				response.send('Te has logueado satisfactoriamente:, ' + request.body.username + '!');
 			} else {
-				response.send('Usuario y/o Contraseña Incorrecta');
+				response.send('Usuario y/o ContraseÃ±a Incorrecta');
 			}
 			response.end();
 		});
 	} else {
-		response.send('Por favor ingresa Usuario y Contraseña!');
+		response.send('Por favor ingresa Usuario y ContraseÃ±a!');
 		response.end();
 	}
 });
