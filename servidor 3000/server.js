@@ -10,6 +10,5 @@ app.get('/',(req,res) => {
     res.sendFile("/home/ubuntu/Colegio-Asia-Lainding-Page/index.html")
 });
 
-
 app.listen(3000);
 console.log('server on port 3000');
