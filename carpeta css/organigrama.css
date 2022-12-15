@@ -1,0 +1,194 @@
+.organigrama_titulo-h2{   /* titulo */
+    text-align: center;
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+    
+}
+.organigrama_titulo-h2::before{
+    content: "";
+    background-color: #171A4A;
+    display: block;
+    width: 100%;
+    height: 2px;
+    position:absolute;
+    top: 50%;
+    z-index: -1;
+
+}
+.organigrama_titulo-h2 span{    /* titulo */
+    background-color:#fff;
+    padding: 0px 19px;
+    color: red;
+    font-weight: bold;
+    font-family: open sans-serif;
+    font-size: 30px;
+}
+
+/* img .organigrama atributos */
+.organigrama_img{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.organigrama_img img{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+   
+}
+
+
+/* seccion del horario */
+
+.horario_titulo-h2{   /* titulo */
+    text-align: center;
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+    
+}
+.horario_titulo-h2::before{
+    content: "";
+    background-color: #171A4A;
+    display: block;
+    width: 100%;
+    height: 2px;
+    position:absolute;
+    top: 50%;
+    z-index: -1;
+
+}
+.horario_titulo-h2 span{    /* titulo */
+    background-color:#fff;
+    padding: 0px 19px;
+    color: red;
+    font-weight: bold;
+    font-family: open sans-serif;
+    font-size: 30px;
+}
+/* ihorario atributos */
+
+.horario_img{
+    /* background-color: rgb(16, 141, 33); */
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+
+.horario_img img{
+    
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+/* ideario institucional */
+
+.ideario_titulo-h2{   /* titulo */
+    text-align: center;
+    position: relative; 
+    width: 80%;
+    margin: 50px auto;
+    
+}
+.ideario_titulo-h2::before{
+    content: "";
+    background-color: #171A4A;
+    display: block;
+    width: 100%;
+    height: 2px;
+    position:absolute;
+    top: 50%;
+    z-index: -1;
+
+}
+.ideario_titulo-h2 span{    /* titulo */
+    background-color:#fff;
+    padding: 0px 19px;
+    color: red;
+    font-weight: bold;
+    font-family: open sans-serif;
+    font-size: 30px;
+}
+
+
+.container_ideario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    /* background-color: aqua; */
+
+}
+
+.ideario_concepto{
+    width: 30%;
+    height: 400px;
+    /* background-color: #171A4A; */
+    transform: translateX(-90px) ;
+
+}
+.ideario_concepto-h2{
+    font-size: 23px;
+    font-family: cambria;
+    
+}
+.ideario_concepto-p{
+    font-size: 17px;
+    font-family: cambria;
+    margin-top: 25px;
+    padding-bottom: 19px;
+    
+}
+.ideario_img{
+    /* background-color: rgb(76, 0, 255); */
+    transform: translateX(90px);
+    width: 400px;
+    height: 340px;
+    border-radius: 10px;
+}
+
+.ideario_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:1000px) {
+
+    .container_ideario{
+        flex-wrap: wrap;
+        height: 800px;
+    }
+    .ideario_concepto{
+        width: 80%;
+        transform: translateX(0px);
+    }
+    .ideario_img{
+        transform: translateX(0px);
+    }
+    .horario_img{
+        height: 300px;
+    }
+
+    .horario_img img{
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    
+    }
+
+
+}
