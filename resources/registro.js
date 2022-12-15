@@ -1,4 +1,4 @@
-const url = "http://3.94.158.208:3000/api/EDUCANDO/";
+const url = "http://34.230.250.81:3000/api/EDUCANDO/";
 let resultados = '';
 const formArticulo = document.querySelector("form");
 const dniedu = document.getElementById("DNIEDU");
