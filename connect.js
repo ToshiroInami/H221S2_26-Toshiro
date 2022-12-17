@@ -1,29 +1,20 @@
-var express = require("express");
-var mysql = require("mysql");
+
+var express = require('express');
+  
+
 var app = express();
-var cors = require("cors");
-
-app.use(express.json());
-app.use(cors());
 
 
-//Añadir el api
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static(__dirname + '/'));
 
-var conexion = mysql.createConnection({
-    host: "34.230.250.81",
-    user: "H221S2_26",
-    password: "1234",
-    database: "registrate",
-  });
-  
-  conexion.connect(function (error) {
-    if (error) {
-      throw error;
-    } else {
-      console.log("Conexión exitosa");
-    }
-  });
+app.get('/', function (req, res) {
+	res.sendFile(__dirname + "/index.html");
+});
+
+app.get('/login', function (req, res) {
+	res.sendFile(__dirname + "/login.html");
+});
 
 const puerto = process.env.PUERTO || 3000;
 
@@ -31,21 +22,44 @@ app.listen(puerto, function () {
   console.log("Servidor funcionando en puerto: " + puerto);
 });
 
-app.post("/api/educando", (req, res) => {
-	let data = {
-    	dniedu: req.body.DNIEDU,
-      nomedu: req.body.NOMEDU,
-    	apeedu: req.body.APEEDU,
-    	sexedu: req.body.SEXEDU,
-    	teledu: req.body.TELEDU,
-      disedu: req.body.DISEDU,
-      proedu: req.body.PROEDU,
-      depedu: req.body.DEPEDU,
-      diredu: req.body.DIREDU,
-      graedu: req.body.GRAEDU,
-      fecedu: req.body.FECEDU
-    };
-	let sql = "INSERT INTO educando SET ?";
+//Recursos
+app.use(express.static(__dirname+'/'));
+
+
+var mysql = require("mysql");
+
+var cors = require("cors");
+
+app.use(express.json());
+app.use(cors());
+
+var conexion = mysql.createConnection({
+  host: "34.230.250.81",
+  user: "H221S2_26",
+  password: "1234",
+  database: "registrate",
+});
+
+conexion.connect(function (error) {
+    if (error) {
+      throw error;
+    } else {
+      console.log("Conexión exitosa");
+    }
+  });
+
+  app.post("/api/educando", (req, res) => {
+    let data = {
+        dniedu: req.body.DNIEDU,
+        nomedu: req.body.NOMEDU,
+        apeedu: req.body.APEEDU,
+        sexedu: req.body.SEXEDU,
+        teledu: req.body.TELEDU,
+        graedu: req.body.GRAEDU
+        
+      };
+
+	let sql = "INSERT INTO pedido SET ?";
 	conexion.query(sql, data, function (error, results) {
   	if (error) {
     	throw error;
