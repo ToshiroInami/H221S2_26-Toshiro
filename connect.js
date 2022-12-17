@@ -59,7 +59,7 @@ conexion.connect(function (error) {
         
       };
 
-	let sql = "INSERT INTO pedido SET ?";
+	let sql = "INSERT INTO educando SET ?";
 	conexion.query(sql, data, function (error, results) {
   	if (error) {
     	throw error;
