@@ -6,12 +6,8 @@ const nomedu = document.getElementById("NOMEDU");
 const apeedu = document.getElementById("APEEDU");
 const sexedu = document.getElementById("SEXEDU");
 const teledu = document.getElementById("TELEDU");
-const disedu = document.getElementById("DISEDU");
-const proedu = document.getElementById("PROEDU");
-const depedu = document.getElementById("DEPEDU");
-const diredu = document.getElementById("DIREDU");
-const graedu = document.getElementById("GRAEDU");
-const fecedu = document.getElementById("FECEDU");
+const graedu = document.getElementById("GRAEDU")
+
 
 var opcion = '';
 
@@ -43,13 +39,8 @@ formArticulo.addEventListener('submit',
                             APEEDU: APEEDU.value,
                             SEXEDU: SEXEDU.value,
                             TELEDU: TELEDU.value,
-                            DISEDU: DISEDU.value,
-                            PROEDU: PROEDU.value,
-                            DEPEDU: DEPEDU.value,
-                            DIREDU: DIREDU.value,
-                            GRAEDU: GRAEDU.value,
-                            FECEDU: FECEDU.value
-                            
+                            GRAEDU: GRAEDU.value
+                          
                         }
                     )
                 }
