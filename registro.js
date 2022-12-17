@@ -19,7 +19,7 @@ formArticulo.addEventListener('submit',
     (e) => {
      e.preventDefault();
      if (opcion == 'crear') {
-         if (USERPED.value == "" || EMAUSPED.value == "" || CELUSPED.value == "" || FOODPED.value == "" || MSGPED.value == "") {
+         if (DNIEDU.value == "" || NOMEDU.value == "" || APEEDU.value == "" || SEXEDU.value == "" || TELEDU.value == ""|| GRAEDU.value == "") {
              alert("Asegúrese de que todos los campos estén completos");
              return false;
          } else {
