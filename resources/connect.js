@@ -14,7 +14,7 @@ var conexion = mysql.createConnection({
     host: "34.230.250.81",
     user: "H221S2_26",
     password: "1234",
-    database: "REGISTRATE",
+    database: "registrate",
   });
   
   conexion.connect(function (error) {
@@ -31,7 +31,7 @@ app.listen(puerto, function () {
   console.log("Servidor funcionando en puerto: " + puerto);
 });
 
-app.post("/api/EDUCANDO", (req, res) => {
+app.post("/api/educando", (req, res) => {
 	let data = {
     	dniedu: req.body.DNIEDU,
       nomedu: req.body.NOMEDU,
@@ -45,7 +45,7 @@ app.post("/api/EDUCANDO", (req, res) => {
       graedu: req.body.GRAEDU,
       fecedu: req.body.FECEDU
     };
-	let sql = "INSERT INTO EDUCANDO SET ?";
+	let sql = "INSERT INTO educando SET ?";
 	conexion.query(sql, data, function (error, results) {
   	if (error) {
     	throw error;
