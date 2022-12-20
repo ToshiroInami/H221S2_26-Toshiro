@@ -1,4 +1,4 @@
-.container-card{
+.container-card1{
 	width: 100%;
 	display: flex;
 	max-width: 1100px;
@@ -14,7 +14,7 @@
 	color: var(--azulClaro);
     font-size: 5rem;
 }
-.card{
+.card1{
 	width: 100%;
 	margin: 20px;
 	border-radius: 6px;
@@ -24,29 +24,29 @@
 	transition: all 400ms ease-out;
 	cursor: default;
 }
-.card:hover{
+.card1:hover{
 	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
 	transform: translateY(-3%);
 }
-.card img{
+.card1 img{
 	width: 100%;
 	height: 250px;
 }
-.card .contenido-card{
+.card1 .contenido-card{
 	padding: 15px;
 	text-align: center;
 }
-.card .contenido-card h3{
+.card1 .contenido-card h3{
 	margin-bottom: 15px;
 	color: #7a7a7a;
 }
-.card .contenido-card p{
+.card1 .contenido-card p{
 	line-height: 1.8;
 	color: #6a6a6a;
 	font-size: 14px;
 	margin-bottom: 5px;
 }
-.card .contenido-card a{
+.card1 .contenido-card a{
 	display: inline-block;
 	padding: 10px;
 	margin-top: 10px;
@@ -57,7 +57,7 @@
 	transition: all 400ms ease;
 	margin-bottom: 5px;
 }
-.card .contenido-card a:hover{
+.card1 .contenido-card a:hover{
 	background: #2fb4cc;
 	color: #fff;
 }
@@ -65,7 +65,7 @@
 	.container-card{
 		flex-wrap: wrap;
 	}
-	.card{
+	.card1{
 		margin: 15px;
 	}
 }

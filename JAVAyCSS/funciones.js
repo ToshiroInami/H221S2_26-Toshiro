@@ -7,7 +7,6 @@ document.addEventListener('mousemove', e => {
 })
 
 /*FUNCION TARJETA CON EFECTO*/
-/*tarjeta con efecto*/
 const card = document.querySelector('.card');
 /*al pasar el cursor aumenta la escala*/
 card.addEventListener('mouseenter', () => {
