@@ -1,0 +1,28 @@
+/* CURSOR*/
+
+.cursor {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #FEEF02;
+    pointer-events: none;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 100ms;
+    will-change: transform;
+}
+
+/*tarjeta con efecto*/
+.card {
+  background-color: #171A4A;
+  border: 1px solid #cccccc;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color:#fff;
+}
+  h2 {
+    transition: all 1.5s;
+  }
+  
+  h2:hover {
+    color: #FEEF02;
+  }
